@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #afd7f1;
+    background-color: #9cc9e7;
 }
 
 .container  {
@@ -120,6 +120,7 @@ body {
 
 .article img {
     margin-bottom: 1em;
+    max-width: 100%;
 }
 
 nav {
@@ -193,4 +194,49 @@ nav {
 
 .fa-envelope {
     margin-right: .5em;
+}
+
+@media screen and (max-width: 1080px) {
+    .article {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .subtitle  {
+        font-size: .5em;
+    }
+
+    .article p {
+        font-size: .8em;
+    }
+
+    .article h1 {
+        font-size: 1.5em;
+    }
+
+    .article h3 {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-height: 940px) {
+    nav {
+        top: 630px;
+        left: -230px;
+    }
+}
+
+@media screen and (max-height: 820px) {
+    nav {
+        top: 530px;
+        left: -210px;
+    }
+}
+
+@media screen and (max-height: 720px) {
+    nav {
+        top: 430px;
+        left: -190px;
+    }
 }
